@@ -14,6 +14,8 @@ private:
     int power;
 
 public:
+    bool operator>(const Enemy &enemy) const;
+    MainHero& operator++();
     MainHero& Attack(MainHero &other);
     MainHero(const MainHero &other);
     MainHero(string nameInp, int healthInp, int xpInp, int power);

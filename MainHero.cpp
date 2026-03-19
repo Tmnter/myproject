@@ -2,6 +2,15 @@
 #include <iostream>
 #include <string>
 using namespace std;
+MainHero& MainHero::operator++() {
+    power++;
+    XP++;
+    cout << name << "New level! Power: " << power << endl;
+    return *this;
+}
+bool MainHero::operator>(const Enemy &enemy) const {
+    return this->power > enemy.getdamage();
+}
 MainHero& MainHero::Attack(MainHero &other) {
     other.health -= this->power;
     cout << this->name + "attack" + other.name << endl;
