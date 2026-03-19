@@ -14,6 +14,7 @@ private:
     int power;
 
 public:
+    friend istream& operator>>(istream &is, MainHero &hero);
     bool operator>(const Enemy &enemy) const;
     MainHero& operator++();
     MainHero& Attack(MainHero &other);

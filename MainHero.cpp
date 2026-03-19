@@ -2,6 +2,17 @@
 #include <iostream>
 #include <string>
 using namespace std;
+istream& operator>>(istream &is, MainHero &hero) {
+    cout << "Enter name: ";
+    is >> hero.name;
+    cout << "Enter health: ";
+    is >> hero.health;
+    cout << "Enter XP: ";
+    is >> hero.XP;
+    cout << "Enter power: ";
+    is >> hero.power;
+    return is;
+}
 MainHero& MainHero::operator++() {
     power++;
     XP++;

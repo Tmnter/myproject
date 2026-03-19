@@ -10,7 +10,12 @@ private:
     string name;
     string type;
     int damage;
+    static int countEnemy;
 public:
+    friend ostream& operator<<(ostream &os, const Enemy &enemy);
+    static int getcountEnemy() {return countEnemy;}
+    void setdamage(int h) { if(h >= 0) damage = h; }
+    int getdamage() const { return damage; }
     Enemy(string Inpname = "Monster", string Inptype = "boss", int Inpdamage = 15);
     ~Enemy();
 };
