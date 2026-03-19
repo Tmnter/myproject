@@ -9,8 +9,11 @@ class Villager {
 private:
     string name;
     string job;
+    int* money;
 public:
-    Villager(string nameInp = "None", string jobInp = "Farmer");
+    Villager(Villager &&other);
+    Villager(const Villager &other);
+    Villager(string nameInp = "None", string jobInp = "Farmer", int moneyInp = 0);
     ~Villager();
 };
 #endif
