@@ -2,26 +2,6 @@
 #include <iostream>
 #include <string>
 using namespace std;
-istream& operator>>(istream &is, MainHero &hero) {
-    cout << "Enter name: ";
-    is >> hero.name;
-    cout << "Enter health: ";
-    is >> hero.health;
-    cout << "Enter XP: ";
-    is >> hero.XP;
-    cout << "Enter power: ";
-    is >> hero.power;
-    return is;
-}
-MainHero& MainHero::operator++() {
-    power++;
-    XP++;
-    cout << name << "New level! Power: " << power << endl;
-    return *this;
-}
-bool MainHero::operator>(const Enemy &enemy) const {
-    return this->power > enemy.getdamage();
-}
 MainHero& MainHero::Attack(MainHero &other) {
     other.health -= this->power;
     cout << this->name + "attack" + other.name << endl;
