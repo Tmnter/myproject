@@ -1,5 +1,5 @@
-#ifndef CHARACTERS3_H
-#define CHARACTERS3_H
+#ifndef ENEMY_H
+#define ENEMY_H
 #include <string>
 #include <iostream>
 

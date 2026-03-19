@@ -1,5 +1,5 @@
-#ifndef CHARACTERS2_H
-#define CHARACTERS2_H
+#ifndef VILLAGER_H
+#define VILLAGER_H
 #include <string>
 #include <iostream>
 

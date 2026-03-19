@@ -1,5 +1,5 @@
-#ifndef CHARACTERS1_H
-#define CHARACTERS1_H
+#ifndef MAINHERO_H
+#define MAINHERO_H
 #include <string>
 #include <iostream>
 
