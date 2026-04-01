@@ -2,7 +2,8 @@
 #include <iostream>
 #include <string>
 using namespace std;
-istream& operator>>(istream &is, MainHero &hero) {
+istream& operator>>(istream &is, MainHero &hero)
+{
     cout << "Enter name: ";
     is >> hero.name;
     cout << "Enter health: ";
@@ -13,28 +14,32 @@ istream& operator>>(istream &is, MainHero &hero) {
     is >> hero.power;
     return is;
 }
-MainHero& MainHero::operator++() {
+MainHero& MainHero::operator++()
+{
     power++;
     XP++;
     cout << name << "New level! Power: " << power << endl;
     return *this;
 }
-bool MainHero::operator>(const Enemy &enemy) const {
+bool MainHero::operator>(const Enemy &enemy) const
+{
     return this->power > enemy.getdamage();
 }
-MainHero& MainHero::Attack(MainHero &other) {
+MainHero& MainHero::Attack(MainHero &other)
+{
     other.health -= this->power;
-    cout << this->name + "attack" + other.name << endl;
+    cout << this->name + " attack " + other.name << endl;
     return *this;
 }
 MainHero::MainHero(const MainHero &other)
-: name(other.name), health(other.health), XP(other.XP), power(other.power) {
-cout << "Copy constructor called for " + other.name << endl;
+    : name(other.name), health(other.health), XP(other.XP), power(other.power)
+{
+    cout << "Copy constructor called for " + other.name << endl;
 }
 MainHero::MainHero(string nameInp, int healthInp, int XPInp, int powerInp)
     : name{nameInp}, health{healthInp}, XP{XPInp}, power(powerInp)
 {
-    cout << "MainHero with 4 arg created" << endl;
+    cout << "\nMainHero with 4 arg created" << endl;
 }
 MainHero::MainHero(string nameInp, int healthInp, int XPInp)
     : MainHero(nameInp, healthInp, XPInp, 0)
@@ -57,6 +62,7 @@ MainHero::MainHero()
 {
     cout << "Default MainHero created" << endl;
 }
-MainHero::~MainHero() {
+MainHero::~MainHero()
+{
     cout << "MainHero deleted" << endl;
 }

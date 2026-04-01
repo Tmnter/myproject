@@ -6,7 +6,8 @@
 
 using namespace std;
 
-class MainHero {
+class MainHero
+{
 private:
     string name;
     int health;
@@ -25,10 +26,22 @@ public:
     MainHero(string nameInp);
     MainHero(string nameInp, int healthInp);
 
-    int getXP() { return XP; }
-    string getName() { return name; }
-    int getHealth() { return health; }
-    void setHealth(int h) { if(h >= 0) health = h; }
+    int getXP()
+    {
+        return XP;
+    }
+    string getName()
+    {
+        return name;
+    }
+    int getHealth()
+    {
+        return health;
+    }
+    void setHealth(int h)
+    {
+        if(h >= 0) health = h;
+    }
     ~MainHero();
 };
 

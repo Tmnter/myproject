@@ -5,7 +5,8 @@
 
 using namespace std;
 
-class Villager {
+class Villager
+{
 private:
     string name;
     string job;
