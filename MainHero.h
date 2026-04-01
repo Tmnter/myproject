@@ -3,12 +3,12 @@
 #include "Enemy.h"
 #include <string>
 #include <iostream>
-
+#include "Character.h"
 using namespace std;
 
 class MainHero : public Character
 {
-private:
+protected:
     int XP;
     int power;
 

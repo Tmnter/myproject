@@ -2,12 +2,12 @@
 #define ENEMY_H
 #include <string>
 #include <iostream>
-
+#include "Character.h"
 using namespace std;
 
-class Enemy
+class Enemy : public Character
 {
-private:
+protected:
     string type;
     int damage;
     static int countEnemy;
