@@ -8,13 +8,12 @@ using namespace std;
 class Villager
 {
 private:
-    string name;
     string job;
     int* money;
 public:
     Villager(Villager &&other);
     Villager(const Villager &other);
-    Villager(string nameInp = "None", string jobInp = "Farmer", int moneyInp = 0);
+    Villager(string nameInp = "None", int healthInp = 0, string jobInp = "Farmer", int moneyInp = 0);
     ~Villager();
 };
 #endif

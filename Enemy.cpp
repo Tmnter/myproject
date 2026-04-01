@@ -7,13 +7,13 @@ int Enemy::countEnemy = 0;
 ostream& operator<<(ostream &os, const Enemy &enemy)
 {
     os << "Name: " << enemy.name
+       << "\nHealth: " << enemy.health
        << "\nType: " << enemy.type
        << "\nDamage: " << enemy.damage
-       << "\nHealth: " << enemy.health;
     return os;
 }
-Enemy::Enemy(string Inpname, string Inptype, int Inpdamage, int Inphealth)
-    :name{Inpname}, type{Inptype}, damage{Inpdamage}, health{Inphealth}
+Enemy::Enemy(string Inpname, int Inphealth, string Inptype, int Inpdamage)
+    :Character{Inpname, Inphealth}, type{Inptype}, damage{Inpdamage}
 {
     cout << "Enemy created: " << name << endl;
     countEnemy++;

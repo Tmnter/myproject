@@ -8,10 +8,8 @@ using namespace std;
 class Enemy
 {
 private:
-    string name;
     string type;
     int damage;
-    int health;
     static int countEnemy;
 public:
     friend ostream& operator<<(ostream &os, const Enemy &enemy);
@@ -27,7 +25,7 @@ public:
     {
         return damage;
     }
-    Enemy(string Inpname = "Monster", string Inptype = "boss", int Inpdamage = 15, int health = 0);
+    Enemy(string Inpname = "Monster", int health = 0, string Inptype = "boss", int Inpdamage = 15);
     ~Enemy();
 };
 #endif

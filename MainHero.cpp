@@ -32,12 +32,12 @@ MainHero& MainHero::Attack(MainHero &other)
     return *this;
 }
 MainHero::MainHero(const MainHero &other)
-    : name(other.name), health(other.health), XP(other.XP), power(other.power)
+    : Character(other.name, other.health}, XP{other.XP}, power{other.power}
 {
     cout << "Copy constructor called for " + other.name << endl;
 }
 MainHero::MainHero(string nameInp, int healthInp, int XPInp, int powerInp)
-    : name{nameInp}, health{healthInp}, XP{XPInp}, power(powerInp)
+    : Character{nameInp, healthInp}, XP{XPInp}, power{powerInp}
 {
     cout << "\nMainHero with 4 arg created" << endl;
 }

@@ -4,20 +4,20 @@
 
 using namespace std;
 Villager::Villager(Villager&& other)
-    : name(move(other.name)), job(move(other.job)), money(other.money)
+    : Character{move(other.name), other.health}, job(move(other.job)), money{other.money}
 {
     other.money = nullptr;
     cout << "Move constructor called"<< endl;
 }
 Villager::Villager(const Villager &other)
-    : name(other.name), job(other.job)
+    : Character{other.name, other.health}, job{other.job}
 {
     money = new int;
     *money = *other.money;
     cout << "Deep copy constructor called"<< endl;
 }
-Villager::Villager(string nameInp, string jobInp, int moneyInp)
-    : name{nameInp}, job{jobInp}
+Villager::Villager(string nameInp, int healthInp, string jobInp, int moneyInp)
+    : Character{nameInp, healthInp}, job{jobInp}
 {
     money = new int;
     *money = moneyInp;

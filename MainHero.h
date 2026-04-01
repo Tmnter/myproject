@@ -6,11 +6,9 @@
 
 using namespace std;
 
-class MainHero
+class MainHero : public Character
 {
 private:
-    string name;
-    int health;
     int XP;
     int power;
 
