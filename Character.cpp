@@ -1,5 +1,5 @@
-#include "Character.h" // Обов'язково підключаємо хедер
-
+#include "Character.h"
+#include "Damagable.h"
 Character::Character(string Inpname, int Inphealth)
     : name{Inpname}, health{Inphealth}
 {
