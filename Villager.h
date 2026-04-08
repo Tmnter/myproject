@@ -11,6 +11,12 @@ protected:
     string job;
     int* money;
 public:
+    void performAction() override {
+    cout << "Villager " << name << " is farming with job: " << job << endl;
+}
+void printInfo() const override {
+    cout << "Type: Villager | Name: " << name << " | Job: " << job << " | Money: " << *money << endl;
+}
     Villager& operator=(const Villager& other);
     Villager(Villager &&other);
     Villager(const Villager &other);
