@@ -13,6 +13,9 @@ protected:
     int power;
 
 public:
+        virtual void performAction() override {
+    cout << "Main Hero " << name << " is preparing to attack!" << endl;
+}
     friend istream& operator>>(istream &is, MainHero &hero);
     bool operator>(const Enemy &enemy) const;
     MainHero& operator++();
