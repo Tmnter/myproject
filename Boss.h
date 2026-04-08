@@ -6,13 +6,17 @@
 #include <string>
 #include <iostream>
 using namespace std;
-class Boss : public Enemy
+class Boss: public Enemy
 {
 private:
     Superpower ultimate;
     int armor;
 
 public:
+    void performAction() override;
+     void bossAction() {
+    cout << "BOSS(Derived class) - ready to use superpower!" << endl;
+}
     Boss(string nameInp, int healthInp, string typeInp, int damageInp,
          string ultName, int ultDmg, string ultEff, int armInp);
 
