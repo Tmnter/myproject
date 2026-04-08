@@ -12,6 +12,12 @@ protected:
     int damage;
     static int countEnemy;
 public:
+    virtual void performAction() override {
+    cout << "Enemy " << name << " (Type: " << type << ") is preparing to attack!" << endl;
+}
+    void enemyAction() {
+    cout << "Enemy(Base class) - ready to fight!" << endl;
+}
     friend ostream& operator<<(ostream &os, const Enemy &enemy);
     static int getcountEnemy()
     {
@@ -26,6 +32,6 @@ public:
         return damage;
     }
     Enemy(string Inpname = "Monster", int health = 0, string Inptype = "boss", int Inpdamage = 15);
-    ~Enemy();
+    virtual ~Enemy();
 };
 #endif
