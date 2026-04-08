@@ -6,7 +6,8 @@
 
 using namespace std;
 
-class Inventory {
+class Inventory
+{
 private:
     string items[5];
 

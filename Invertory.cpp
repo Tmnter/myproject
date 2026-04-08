@@ -3,7 +3,8 @@
 
 using namespace std;
 
-Inventory::Inventory() {
+Inventory::Inventory()
+{
     items[0] = "Health Potion";
     items[1] = "Mana Potion";
     items[2] = "Iron Sword";
@@ -13,10 +14,13 @@ Inventory::Inventory() {
     cout << "Inventory Default items loaded into the shop" << endl;
 }
 
-void Inventory::showItems() const {
+void Inventory::showItems() const
+{
     cout << "--- Current Stock ---" << endl;
-    for (int i = 0; i < 5; i++) {
-        if (!items[i].empty()) {
+    for (int i = 0; i < 5; i++)
+    {
+        if (!items[i].empty())
+        {
             cout << i + 1 << ". " << items[i] << endl;
         }
     }

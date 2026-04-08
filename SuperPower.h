@@ -5,7 +5,8 @@
 
 using namespace std;
 
-class Superpower {
+class Superpower
+{
 private:
     string name;
     int damage;

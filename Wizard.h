@@ -6,7 +6,8 @@
 
 using namespace std;
 
-class Mage : public MainHero {
+class Mage : public MainHero
+{
 private:
     int mana;
     string magicSchool;

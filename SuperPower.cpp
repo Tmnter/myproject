@@ -11,6 +11,7 @@ Superpower::Superpower(string nameInp, int damageInp, string effectInp)
     cout << "Superpower constructor with parameters called " << name << endl;
 }
 
-void Superpower::use() const {
+void Superpower::use() const
+{
     cout << "> Ability: " << name << " | Damage: " << damage << " | Effect: " << effect << endl;
 }

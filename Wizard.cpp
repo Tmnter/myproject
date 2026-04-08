@@ -10,15 +10,20 @@ Mage::Mage(string nameInp, int healthInp, int xpInp, int powerInp, int manaInp, 
 {
     cout << "Mage from " << magicSchool << " school created!" << endl;
 }
-void Mage::castSpell() {
-    if (mana >= 10) {
+void Mage::castSpell()
+{
+    if (mana >= 10)
+    {
         mana -= 10;
         cout << name << " casts magic! Mana left: " << mana << endl;
-    } else {
+    }
+    else
+    {
         cout << name << " doesn't have enough mana (need 10)!" << endl;
     }
 }
 
-Mage::~Mage() {
+Mage::~Mage()
+{
     cout << "Mage " << name << " disappeared in a cloud of smoke." << endl;
 }
