@@ -1,0 +1,14 @@
+SYSTEM: World data loaded from file.
+SYSTEM: World data loaded from file.
+LOGIN: Admin entered the system.
+DATABASE: New location created - arena
+PLAYER: Successfully moved to arena
+PLAYER: Interaction with Torik
+SYSTEM: World data loaded from file.
+LOGIN: Admin entered the system.
+SYSTEM: World data loaded from file.
+LOGIN: Admin entered the system.
+DATABASE: New location created - Arena
+PLAYER: Successfully moved to Arena
+PLAYER: Interaction with Torik
+SYSTEM: World data loaded from file.

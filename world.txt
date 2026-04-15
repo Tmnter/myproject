@@ -1,0 +1,9 @@
+L Taverna  beautiful_place_for_relax
+N Villager Ivan 0
+N E Orkulo 100 Goblin
+L Cave  Very_dark_place
+N E Dragon 500 Reptilija
+L field  long_and_straight_place
+N Villager Petro 0
+L Arena there_are_more_enemy
+N E Torik 100 Îðê
