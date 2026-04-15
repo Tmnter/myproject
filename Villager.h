@@ -11,6 +11,9 @@ protected:
     string job;
     int* money;
 public:
+    string saveToString() const override {
+    return "Villager " + name + " " + to_string(*money);
+}
     void performAction() override {
     cout << "Villager " << name << " is farming with job: " << job << endl;
 }

@@ -16,6 +16,7 @@ public:
         health -= amount;
         cout << name << " took " << amount << " damage. Remaining HP: " << health << endl;
     }
+virtual string saveToString() const = 0;
 virtual void performAction() = 0;
 virtual void printInfo() const {
     cout << "Type: Character | Name: " << name << " | HP: " << health << endl;

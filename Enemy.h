@@ -12,8 +12,11 @@ protected:
     int damage;
     static int countEnemy;
 public:
+    string saveToString() const override {
+    return "E " + name + " " + to_string(health) + " " + type; // E - маркер ворога
+}
     virtual void performAction() override {
-    cout << "Enemy " << name << " (Type: " << type << ") is preparing to attack!" << endl;
+    cout << "Enemy " << name << " is preparing to attack!" << endl;
 }
     void enemyAction() {
     cout << "Enemy(Base class) - ready to fight!" << endl;
